@@ -9,8 +9,11 @@ import { fondoClaro } from "../UI/variables";
 const StyleContainer = styled.div`
   background-color: ${({theme})=> theme.body};
   min-height: 90vh;
-  padding: 0px 15vw;
+  padding: 0px 5vw;
   padding-bottom: 50px;
+  @media (min-width: 768px) {
+    padding: 0px 15vw;
+  }
 `;
 
 const StyleContent = styled.section`
